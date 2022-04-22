@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/HFd4mqD/image-1.png">
+    <title>Proyectos </title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Start of Async Callbell Code -->
+    <script>
+        window.callbellSettings = {
+            token: "vJkietztMQ3H6AspRbmUx99F"
+        };
+    </script>
+    <script>
+        (function () { var w = window; var ic = w.callbell; if (typeof ic === "function") { ic('reattach_activator'); ic('update', callbellSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Callbell = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://dash.callbell.eu/include/' + window.callbellSettings.token + '.js'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
+    </script>
+    <!-- End of Async Callbell Code -->
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+    
+    <!--absoluts-->
+    <div class="tiempo">
+        <span> <b id="hora">12:00 </b> <i class="far fa-clock"></i></span>
+    </div>
+    <div class="fondo">
+        <img src="img/background.jpg" alt="">
+    </div>
+    <div class="menu" onclick="menuPop()">
+        <img src="img/ico-menu.png" alt="">
+    </div>
+    <div class="portada" onclick="openInfo()">
+        <img src="img/Omar.png" alt="">
+    </div>
+     <!--normals-->
+    <div class="book-btn">
+        <button class="btn-hover color-3" onclick="book()"> <i class="fas fa-book-open"> </i>  <span>Book</span> </button>
+    </div>
+     <div class="porjects">
+        <a href="https://github.com/omarguerrer/TrainingPlatform" data-aos="zoom-in">
+            <div class="card-project" data-tilt>
+                <div class="card primary-gradient">
+                    <h2>A D R A <br> Training Platform</h2>
+                    <img src="img/adra.png" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="https://github.com/omarguerrer/VirtualTravels" data-aos="zoom-in">
+            <div class="card-project" data-tilt>
+                <div class="card secondary-gradient">
+                    <h2>A G E N C Y <br> Virtual ~ Travels</h2>
+                    <img src="img/virtual-travels.png" alt="vtravels">
+                </div>
+            </div>
+        </a>
+        <a href="https://drive.google.com/file/d/1su0Mu-e_nqXNz0HzRCW8smQL_Hp62i_k/view?usp=sharing" data-aos="zoom-in">
+            <div class="card-project" data-tilt>
+                <div class="card yellow-gradient">
+                    <h2>B A S I C <br> Medicament Record</h2>
+                    <img src="img/Medicament-Record.png" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+
+     <!--pop ups-->
+
+     <div class="screenmenu" id="menu-popUp">
+        <div class="close-menu" id="closeMenu" >
+            <img src="img/ico-x.png" alt="x">
+        </div>
+        <div class="options">
+            <a href="index.html">
+                Inicio
+            </a>
+            <a href="projects.html">
+                Proyectos
+            </a>
+            <a href="quiz1.html">
+                Quiz game
+            </a>
+            <a href="info.html">
+                Info
+            </a>
+        </div>
+    </div>
+
+     <!--scripts-->
+     <script src="js/projects.js" type="text/JavaScript"></script>
+     <script src="js/3d-card.js" type="text/JavaScript"></script>
+
+</body>
+</html>

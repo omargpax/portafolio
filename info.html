@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/HFd4mqD/image-1.png">
+    <title>Mi perfil</title>
+    <!-- Start of Async Callbell Code -->
+    <script>
+        window.callbellSettings = {
+            token: "vJkietztMQ3H6AspRbmUx99F"
+        };
+    </script>
+    <script>
+        (function () { var w = window; var ic = w.callbell; if (typeof ic === "function") { ic('reattach_activator'); ic('update', callbellSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Callbell = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://dash.callbell.eu/include/' + window.callbellSettings.token + '.js'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
+    </script>
+    <!-- End of Async Callbell Code -->
+</head>
+
+<body>
+    <!--absoluts-->
+    <div class="menu" onclick="menuPop()">
+        <img src="img/ico-menu.png" alt="">
+    </div>
+    <div class="fondo">
+        <img id="fondo" src="img/background.jpg" alt="">
+    </div>
+
+    <div class="theme-togle">
+        <label class="switch">
+            <input id="togle-theme" type="checkbox" value="s" checked onclick="tema()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="header">
+        <div class="usuario-bio">
+            <div class="perfil" onclick="fiver()" style="cursor: pointer;">
+                <img src="https://avatars.githubusercontent.com/u/67404295?s=400&u=02ba27f6c913949a600838e6fa043fbb87581fbb&v=4"
+                    alt="perfil">
+            </div>
+            <div class="descripcion">
+                <h2 class="name">Omar Guerrero Pusma</h2>
+                <span class="biografia">Hola, soy omar. estudio lenguajes de programacion, realizo diseños y proyectos
+                    por curiosidad; puedes
+                    revizar mis redes para más información.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="redes">
+            <a href="https://www.facebook.com/omar9.guerrero/" title="omar guerrero"> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWlJREFUSEu1lY1NwzAQhd+bgBGACYAJYASYAJiAdgJgAsoEwASUDTpC2aDdACZ46Co7sh3/BSmWrEiJfd/57vmFmHlw5vhoAiTdAbgEcO6m5bR1c03yq5ZkESDpGsALgJPGKXcAliTXuXVZgKQVgIeJ5VuRXKZ7RoB/BvdxX0kuQkgEcGX5rGS+B7AIyyHpCcBjsOcm/J4CrJ7HBcCvNZmkrRlGBrAjeeoXDACnlrdK9h8kTVGHIenKqcueNsMxnCIEvAO4rQCeSVo5LLgprFbKIZkQYNo+6wSkdU+3bUle2MsQoIYswxO0ACB5iN0E+IUluKSN60W0JAfIKqgD8APgKEngm6RZS3SCbJM7ALnSZptsEqzJdEoP7klawrGbSqpdtF7AnuRgkFOsohdQtgp3iUpO2gOom11gA7mGtwCRlYy8KNW5swM7jTe/EmDksGGs3l+mmdnGK8MZY/SudBGbgIZ9ND/PDvgDFmC1GY5MnWUAAAAASUVORK5CYII=" />
+                <span>facebook</span> <i class="fas fa-angle-right"></i></a>
+            <a href="https://www.instagram.com/omargpax/?hl=es" title="omargpax"> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZ5JREFUSEvNlb1NA0EQhb/XARGpTQVABYaEFFMAEnRAB4YKEBkZuAJwSARUYKgAiwb4aWDQQ7tofbbvzoFlRjqddDc7b37evBUrNq04PusBiIguMAB20lNX6Avg50qS31M2U0FEnAA3yesZ+EwB5oE4gQ2gl36eSrotHacAIsIHxoAD9yU5eKOliu+BbWC3rKQKYPQ+0G0TPCKOgQvgCzgC3oChJHfh16oAE2Aiaa+adkQY2BnaXiSNIuIAeADeJXUi4gnoSNpaBBBpWGfZISLc48c5w3awa+Ab2JQ0TAA9SX+JVyswwIWk8wLAzDCrTiS5z6Rq3M6xpP3C16DtAVKgO/c3By+CZbb9/Vu6gohwJYOy5ErrPsqK/yWAmbO6FqWBesidNORR+ub+XwKvJaXbtsiaUqWp2ZF3II9hZtvbADQtmqUkL9ovZUtLAFYB03ruJpvbh8BWG6moBHfQRqnIYueWWBldUaMlsTMZfH6x2BUDzHJtoDq5zpqV3/VyXSyRM/GgfdAMqjMrqRM5b3XhNPZjSYf13MlLJlnr/gN1YvoZXCUOOQAAAABJRU5ErkJggg==" />
+                <span>instagram</span> <i class="fas fa-angle-right"></i></a>
+            <a href="https://github.com/omarguerrer" title="omarguerrer"> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbdJREFUSEu1VQtRw0AU3FUAKAAUAAqgCgAFFAVQBYACigOqAFBAUUBx0DooCh6z7bvwcrk2gZncTCYzl7vdt/s+IXpe7BkfrQRmdgHgHMCxP4pp5s+U5GRbkBsJHPgRwEGLyjmAEcnX0rkigZndA7j7o31jkqP8ToPgn+AJ94nkbSSpEZjZGYB3P/AGQEqGAG5878vfR/6W/89+5sr3LqNdOYH83PeDDyRFADPbJbmMkcW9TPWc5GE6WxF4Ul8CyISkom9dBVuvSUrZb5mamTaSTH0bkJy2oq8VqoQ/S8FFBQI7TV6T1KXOy8zi/RnJk1yBPN5xxA+SSnjnlRGA5Cr4qMACWi8EUeKS5F7n8Nd5iA4sSK4mQFSQJ1ntP+5CYmZqLo2VtKoK3FSm354P9YG6s9YDCUW94JWXB9IsU10yMzWaEj0AoKhS2aqrh4nIgaVYVSeSuCp7ahY5QRoVilhllkCqrg7R55amT7X+KQ275GdxOgaC0sTdPuzC5USiH4vUKGmr1t9C0FDZsCgDkF0C1fArWZQULDw/xbHS5ZcpIvWF1EQFGiUHm/5k6WArQZc+2Hamd4IfXwTFGbCHxBkAAAAASUVORK5CYII=" />
+                <span>github</span> <i class="fas fa-angle-right"></i></a>
+            <a href="https://es.fiverr.com/omarguerrero740" title="omarguerrero740"> <img class="fiver-img"
+                    src="https://cdn-icons-png.flaticon.com/512/732/732025.png" width="20px" />
+                <span>fiverr</span> <i class="fas fa-angle-right"></i></a>
+            <a href="https://twitter.com/omarGpax" title="omarGpax"> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVpJREFUSEvdVcFRwzAQ3K0AOoAOIBUAFRAqACoAKoBUQEpIB5AKoAOgA1IBUMEyy0geS5YV7Bl/cjP+SHe7d6u7MzGxcWJ87BiBpH2S3zXZ7APgBsAcwDGATwArkgvHSZqTfI4YiUSS7GyH9z4SSa8ATgr3jjHhHcllh0CSL98AuIILkgZKrOXTx2+SDwDLmGRegVqRzmLRlszlA3iqSPgTFGiSywms3XkG4DN/lm8G4LFCsCbpJBprCMLjHQawg5Hz4YofagRfI4FjWPLAPix10djsjTfLOzAncCf5gfZGVLIhaYkT66yK0CmXYZCG8HTk6UgUJvEUwMsQZAAbD1lpCxSXnSR3wv0AkrPSYBYriKChbT1slqtm1yRXfQ59FVimuND6Yj21tzXwpAJJBnXGR/+QZh3APd1VK3XRFQCTuWUjmReYl+Df2iC5FTiy7tgfbZueY+4nl+gX3293GUCOwckAAAAASUVORK5CYII=" />
+                <span>twiter</span> <i class="fas fa-angle-right"></i></a>
+            <a href="https://open.spotify.com/playlist/02if8besghVHWZSJwlS6MI?si=810ed1215f904fb9" title="spotify"> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMFJREFUSEvtleENwiAQhb/bwA10A93AFXQDN9ANdAQ3sSPUDXQDN3mmphBsaJQWYkzKHxIC9929B4dReFjh+EwAr7CkGli7BTN7qeMlkqQhfrhA3fPFAC6wr2RI1rEzroLfAXJ50FtBccBYL/7Dg+DOz4A9sAMWwKOdGeVBADgBx5isWa6ppCbjeUlAb1vJJdENWEYquJvZKlxPanaBBxvgEgFszayKAlLfgaQGcmhb9BU4d4O/tetUwLf7py/zo1JPuGRlGa9w1ZkAAAAASUVORK5CYII=" />
+                <span>playlist</span> <i class="fas fa-angle-right"></i></a>
+            <a href="https://www.linkedin.com/in/omar-guerrero-pusma-760059203/" title="Omar Guerrero"> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARFJREFUSEvtlcFNw0AQRd+vgJRAOMARqADogBI4I3FAooBQABJC4kwJiA5IB+SWA4fQAWmAjwatrY1jYWmXcMqeLNvz3ujPri02vLRhPmsC23vAl6TFX8hXBLYfgKsEvpN0UytpBbYPgHkHuCvpo0YyJBjXRtWN6BG4TB3fS7qu6T5q+4a8n4b8XgtfE9g+BZzAS0lvcW37CNjJ79seAYdA1MR7s744uxE18GBNJUVxCF6BkySYAhPgGQhJviaSbvMbJYI4HwHuwhvumaRo6GeVCIZG8yLpvFbQQmxfAE+ZdSFpXCs4bjZAmtFntgmQ1CZTFFEO6NkEWwErEWwj6vtUlEc0dERLnv//T7+ky99qvgFoXMgZAzL0uQAAAABJRU5ErkJggg==" />
+                <span>linkedin</span> <i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="foot">
+        <!--<iframe src="https://open.spotify.com/embed/playlist/02if8besghVHWZSJwlS6MI" width="100%" height="380"
+            frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/35xI4hSJ8MdO1xkXwsd56a?utm_source=generator" width="100%"
+            height="380" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <!--pop ups agregados-->
+
+    <div class="screenmenu" id="menu-popUp">
+        <div class="close-menu" id="closeMenu">
+            <img src="img/ico-x.png" alt="x">
+        </div>
+        <div class="options">
+            <a href="index.html">
+                Inicio
+            </a>
+            <a href="projects.html">
+                Proyectos
+            </a>
+            <a href="quiz1.html">
+                Quiz game
+            </a>
+            <a href="info.html">
+                Info
+            </a>
+        </div>
+    </div>
+
+    <!--scripts-->
+
+    <script src="js/info.js" type="text/JavaScript"></script>
+</body>
+
+</html>
