@@ -11,4 +11,4 @@ web site minimalista con respecto a la informacion de usuario.
 ![vista website perfil](https://i.ibb.co/1Td4TwZ/screen.png)
 
 > informacion de usuario
-> [releases v1.0](https://github.com/omarguerrer/profile-website/releases/tag/Perfil "releases v1.0").
+> [releases v1.0](https://github.com/omargpax/portafolio/releases/tag/Perfil "releases v1.0").
